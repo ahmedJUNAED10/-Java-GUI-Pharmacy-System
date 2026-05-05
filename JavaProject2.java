@@ -60,7 +60,7 @@ public class JavaProject2 extends JFrame implements ActionListener {
         add(qtyField);
 
         
-        String[] btns = {"Add", "Search", "Update", "Delete", "Display"};
+        String[] btns = {"Add", "Search Medicine", "Update", "Delete", "Display"};
 
         for (String b : btns) {
             JButton btn = new JButton(b);
