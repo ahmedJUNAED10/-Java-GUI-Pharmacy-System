@@ -37,12 +37,12 @@ public class JavaProject2 extends JFrame implements ActionListener {
 
     public JavaProject2() {
 
-        setTitle("Pharmecy Medicine  Management System");
+        setTitle("Pharmecy Medicine Management System");
         setSize(500, 400);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Input fields
+        
         add(new JLabel("Medicine Name:"));
         nameField = new JTextField(10);
         add(nameField);
