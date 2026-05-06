@@ -60,7 +60,7 @@ public class JavaProject2 extends JFrame implements ActionListener {
         add(qtyField);
 
         
-        String[] btns = {"Add", "Search Medicine", "Update", "Delete", "Display"};
+        String[] btns = {"Add", "Search", "Update", "Delete", "Display"};
 
         for (String b : btns) {
             JButton btn = new JButton(b);
@@ -71,7 +71,7 @@ public class JavaProject2 extends JFrame implements ActionListener {
                 btn.setBackground(Color.MAGENTA);
             else if (b.equals("Update"))
                 btn.setBackground(Color.GREEN);
-            else if (b.equals("Search Medicine"))
+            else if (b.equals("Search"))
                 btn.setBackground(Color.CYAN);
             else
                 btn.setBackground(Color.LIGHT_GRAY);
