@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-class Pharmecy {
+class Pharmacy {
     private String medicineName;
     private String serialNum;
     private double price;
     private int numberofMedicine;
 
-    public Pharmecy(String name, String serial, double price, int qty) {
+    public Pharmacy(String name, String serial, double price, int qty) {
         this.medicineName = name;
         this.serialNum = serial;
         this.price = price;
@@ -32,12 +32,12 @@ public class JavaProject2 extends JFrame implements ActionListener {
     JTextField nameField, serialField, priceField, qtyField;
     JTextArea outputArea;
 
-    Pharmecy[] list = new Pharmecy[50];
+    Pharmacy[] list = new Pharmacy[50];
     int count = 0;
 
     public JavaProject2() {
 
-        setTitle("Pharmecy Medicine Management System");
+        setTitle("Pharmacy Medicine Management System");
         setSize(500, 400);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -115,7 +115,7 @@ public class JavaProject2 extends JFrame implements ActionListener {
      
         if (cmd.equals("Add")) {
             if (count < list.length) {
-                list[count] = new Pharmecy(name, serial, price, qty);
+                list[count] = new Pharmacy(name, serial, price, qty);
                 count++;
                 outputArea.setText("Medicine Added");
             } else {
