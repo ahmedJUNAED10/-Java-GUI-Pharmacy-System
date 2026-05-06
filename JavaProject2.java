@@ -112,7 +112,7 @@ public class JavaProject2 extends JFrame implements ActionListener {
             return;
         }
 
-        // ADD
+     
         if (cmd.equals("Add")) {
             if (count < list.length) {
                 list[count] = new Pharmecy(name, serial, price, qty);
